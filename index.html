@@ -17,9 +17,7 @@
         <p>
             <a href="https://tronscan.org/#/contract/THddAHwJGHE5jtNrEHzompsDafgujH5YP1/code" target="_blank">Use Contract</a>
         </p>
-        <div>
-            [TIMER]
-        </div>
+        <div id="timer"></div>
     </div>
 </div>
 <section>
@@ -85,5 +83,24 @@
     <p><a href="">Twitter</a> | <a href="">Telegram</a> | <a href="mailto:officialnuitoken@gmail.com">Email</a></p>
     <p>&copy; 2020 NUI Tokens. </p>
 </footer>
+
+<script>
+    function zeroPrefix(val) {
+        if ((val.toString()).length < 2) {
+            val = '0' + val;
+        }
+
+        return val;
+    }
+
+    setInterval(function time() {
+        let d = new Date(),
+            hours = 24 - d.getHours(),
+            min = 59 - d.getMinutes(),
+            sec = 59 - d.getSeconds();
+
+        document.getElementById('timer').innerHTML = zeroPrefix(hours) + ':' + zeroPrefix(min) + ':' + zeroPrefix(sec);
+    }, 1000);
+</script>
 </body>
 </html>
