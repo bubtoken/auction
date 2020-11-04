@@ -50,6 +50,19 @@ body {
     text-align: center;
 }
 
+#timer {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 400ms ease-in;
+}
+
+#timer:empty {
+    opacity: 0;
+}
+
 #logo {
     max-width: 330px;
     margin-bottom: 40px;
