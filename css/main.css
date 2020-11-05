@@ -43,6 +43,15 @@ body {
     min-height: 23px;
 }
 
+.notice {
+    background: linear-gradient(45deg, #703886, #2196F3);
+    padding: 10px 20px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+
 .button:hover {
     background: #5fb3ff;
 }
@@ -64,7 +73,7 @@ body {
 
 #header {
     background: url(/img/bg.jpg) no-repeat center bottom;
-    height: 530px;
+    height: 580px;
 }
 
 #header,
