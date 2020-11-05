@@ -14,22 +14,13 @@ body {
     line-height: 1.7;
 }
 
-#header {
-    background: url(/img/bg.jpg) no-repeat center bottom;
-    height: 530px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-}
-
 #nav {
     position: fixed;
     top: 10px;
     right: 10px;
     z-index: 10;
     padding: 10px;
+    display: flex;
 }
 
 #nav .button {
@@ -48,10 +39,17 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
+    text-align: center;
+    min-height: 23px;
 }
 
 .button:hover {
     background: #5fb3ff;
+}
+
+#header {
+    background: url(/img/bg.jpg) no-repeat center bottom;
+    height: 530px;
 }
 
 #header,
@@ -81,8 +79,8 @@ body {
 }
 
 #timer {
-    opacity: 1;
-    transition: opacity 400ms ease-in;
+    min-width: 190px;
+    text-align: center;
 }
 
 #timer.button,
@@ -90,8 +88,17 @@ body {
     background: #444040 !important;
 }
 
-#timer:empty {
+#countdown {
+    opacity: 1;
+    transition: opacity 400ms ease-in;
+}
+
+#countdown:empty {
     opacity: 0;
+}
+
+#header p {
+    max-width: 60%;
 }
 
 #logo {
@@ -100,19 +107,22 @@ body {
     width: 100%;
 }
 
-iframe {
-    padding: 30px 0;
+#container {
     width: 100%;
-    box-sizing: border-box;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 section {
     padding: 20px 40px;
 }
 
+section iframe,
 section img {
     width: 100%;
     margin: 50px 0;
+    max-width: 860px;
+    box-sizing: border-box;
 }
 
 footer {
@@ -122,4 +132,66 @@ footer {
 
 footer p {
     margin: 20px 0;
+}
+
+a,
+a:link {
+    color: #000;
+}
+
+@media only screen and (max-width: 542px) {
+    #nav {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: white;
+        padding: 15px 5px 16px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    #header {
+        padding-top: 80px;
+    }
+
+    #nav a {
+        width: calc(50% - 17px);
+        box-sizing: border-box;
+    }
+
+    #nav .button:last-child {
+        margin-right: 10px;
+    }
+
+    #timer {
+        width: 100%;
+        margin-bottom: 17px !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #logo {
+        max-width: 240px;
+        margin-top: 50px;
+    }
+
+    body {
+        font-size: 13px;
+    }
+
+    #header p {
+        max-width: 90%;
+    }
+
+    section {
+        padding: 0 20px;
+    }
+
+    .button {
+        padding: 7px 10px 9px;
+    }
 }

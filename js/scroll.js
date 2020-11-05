@@ -19,7 +19,7 @@ function scrollToAnchor(event, link) {
     let offset = header.outerHeight() - 1;
 
     scrollContainer.stop().animate({
-        scrollTop: $(link.attr('href')).offset().top - offset
+        scrollTop: $(link.attr('href')).offset().top - offset - 20
     }, 2000, 'easeOutQuint', function () {
         removeAbortBinding();
     });
