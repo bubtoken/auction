@@ -47,6 +47,21 @@ body {
     background: #5fb3ff;
 }
 
+#auction-table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#auction-table td,
+#auction-table th {
+    padding: 10px;
+}
+
+#auction-table th {
+    border-bottom: 1px solid #c5c5c5;
+}
+
 #header {
     background: url(/img/bg.jpg) no-repeat center bottom;
     height: 530px;
