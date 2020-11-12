@@ -499,7 +499,7 @@ rgba(81, 36, 255, 0.15) 0.08%, rgba(130, 98, 255, 0.15) 95.38%, rgba(138, 113, 2
                                                                             fa - telegram - plane "})])]),n("
                                                                         li ",[n("
                                                                         a ",{attrs:{href:"
-                                                                        https: //twitter.com/StakingDefi",target:"_blank"}},[n("i",{staticClass:"fab 
+                                                                        https: //twitter.com/NuiToken",target:"_blank"}},[n("i",{staticClass:"fab 
                                                                             fa - twitter "})])])])])]),n("
                                                                         div ",{staticClass:"
                                                                         col - md - 6 "},[n("
